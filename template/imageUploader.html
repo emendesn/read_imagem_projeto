@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Upload Image to PostgreSQL</title>
+        <style>
+            body {background-color: #E9ECCC;}
+            h1 {font-size: 30pt;}
+            .div-main {margin: auto; padding-left: 10px; padding-right: 10px;}
+            .form-fld-caption {text-align: right;}
+            .form-fld-input {text-align: left;}
+            .form-btn-submit {text-align: left;}
+            .frm-bnt-submit {width: auto; color: #CCCC00;}
+            .file-input {width: 58px; color: #FFFFFF; background-color: #000000;}
+        </style>
+    </head>
+    <body style='background-color: #E9ECCC;'>
+        <div class='div-primary'>
+            <h1>Upload Image File</h1>
+            <h2>{{msg}}</h2>
+            <form action='/ImageUploader' method='POST' enctype='multipart/form-data' id='UploadForm'>
+                <div class='row'>
+                    <div class='form-fld-caption'>Select an Image</div>
+                    <div class='form-fld-input'><input type='file' class='file-input' name='file_image' id='file_image'></div>
+                </div>
+                <div class='row'>
+                    <div class='form-btn-submit'><button type='submit' class='frm-bnt-submit'>Upload File</button> </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
